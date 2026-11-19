@@ -47,6 +47,28 @@ clock no longer overlaps the "551,864" box; "ANT" moved away from the
 card edge; the Colombia card's source no longer dangles on a third
 line. Story set unchanged: 39 stories.
 
+## v4 (editorial devices, current)
+
+Closes the remaining craft gap with the top 5, all drawn in code:
+claim tags on every lead and medium card (green REPORTED, blue
+FORECAST, amber CLAIM, rank 2 style); a red rotated "CUT" stamp on
+the COP31 card with the "$120bn" in its picture struck through
+(rank 1 style); a "THE DAY BY HOURS" strip under the numbers strip
+with seven real local times (00:00 Auckland GTA VI unlocks, 04:42
+Riyadh sirens, 08:40 Seoul exam begins, 09:30 New York market
+opens, 10:00 The Hague ruling, 13:05 Seoul flights pause, 16:30
+Shenzhen leaders meet - the last three verified against reporting
+this session, see sources.json); the summit leaders now differ by
+hair, suit and tie, the courthouse gained column capitals, bases
+and arched windows, and the GTA VI skyline gained extra lit windows
+and street lamps. Tags are honest: 12 REPORTED, 1 FORECAST
+(Cyclone Akvan, landfall due Friday); no featured card is a pure
+claim, so no CLAIM tag appears - the two claim stories (Trump's
+Iran bio-arms claim, the Houthi airport claim) are briefs, not
+featured cards. To make room for the timeline strip the leads
+shrank to 248 px and the mediums to 140 px; masthead, numbers,
+map, list, DATE CHECK and sources are unchanged.
+
 ## Run it
 
 ```sh
