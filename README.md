@@ -34,6 +34,19 @@ Hormuz tanker hit (both 18 Nov), the Pew Muslims-by-2035 projection
 UAE growth forecast. Anthropic's $83 pricing was Wednesday 18 Nov;
 Thursday 19 Nov is the first trading day (opened at $111.50).
 
+## v3 (audit fixes, current)
+
+Read against the kit's five judge criteria before submission: the
+"record IPO" wording is gone (Reuters notes estimates put SpaceX's
+June raise as high as $86.2bn, so the card and the numbers strip now
+say "$81.3bn IPO" and the source note carries the caveat); the world
+map's continents were redrawn with denser coastlines plus the UK,
+Japan, Indonesia and New Zealand islands, pins unchanged; the
+"4.9%" jobs label no longer sits on the tallest bar; the Suneung
+clock no longer overlaps the "551,864" box; "ANT" moved away from the
+card edge; the Colombia card's source no longer dangles on a third
+line. Story set unchanged: 39 stories.
+
 ## Run it
 
 ```sh

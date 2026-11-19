@@ -136,7 +136,7 @@ LEADS = [
 
 MEDIUMS = [
     {"n": 4, "kick": "NASDAQ \u00b7 MARKETS", "art": "anthropic",
-     "head": "Anthropic debuts after record IPO",
+     "head": "Anthropic debuts after $81.3bn IPO",
      "body": "Priced at $83 on Wednesday, it raised $81.3bn. Shares opened at $111.50 as ANT. \u2014 AP"},
     {"n": 5, "kick": "ANTALYA \u00b7 CLIMATE", "art": "cop31",
      "head": "COP31 draft cuts $120bn aid goal",
@@ -164,7 +164,7 @@ MEDIUMS = [
      "body": "Parliament approves the Greenland security deal. \u2014 AP"},
     {"n": 13, "kick": "BOGOT\u00c1 \u00b7 LABOUR", "art": "strike",
      "head": "Colombia's unions hold a national strike",
-     "body": "Marches in five cities against the Economic Rescue bill. \u2014 Colombia Today"},
+     "body": "Marches in five cities against the Economic Rescue bill. \u2014 US Embassy"},
 ]
 
 BRIEFS = [
@@ -201,7 +201,7 @@ REGIONS = [("ASIA", 10, (168, 90, 26)), ("MIDDLE EAST", 5, (142, 47, 47)),
            ("AMERICAS", 7, (106, 74, 138)), ("OCEANIA", 3, (47, 122, 122)),
            ("WORLD", 4, (51, 51, 51))]
 
-NUMBERS = [("$81.3bn", "Anthropic's record IPO"),
+NUMBERS = [("$81.3bn", "Anthropic's $81.3bn IPO"),
            ("15.9m", "GTA VI pre-orders banked"),
            ("551,864", "Suneung exam sitters"),
            ("$120bn", "Aid goal cut at COP31"),
@@ -287,7 +287,7 @@ def illo_anthropic(d, x, y, w, h):
     f = font(SANSB, 16)
     d.text((x + 8, y + 4), "$83", font=f, fill=(255, 255, 255))
     f2 = font(SANSB, 9)
-    d.text((x + 150, y + 4), "ANT", font=f2, fill=(255, 215, 106))
+    d.text((x + 138, y + 4), "ANT", font=f2, fill=(255, 215, 106))
 
 
 def illo_cop31(d, x, y, w, h):
@@ -316,10 +316,10 @@ def illo_suneung(d, x, y, w, h):
                 outline=(180, 140, 40))
     f = font(SANSB, 8)
     d.text((x + 122, y + 19), "551,864", font=f, fill=INK)
-    d.ellipse([x + w - 34, y + 4, x + w - 8, y + 30], fill=(255, 255, 255),
+    d.ellipse([x + 6, y + 8, x + 28, y + 30], fill=(255, 255, 255),
               outline=INK)
-    d.line([x + w - 21, y + 17, x + w - 21, y + 10], fill=INK, width=2)
-    d.line([x + w - 21, y + 17, x + w - 15, y + 20], fill=INK, width=2)
+    d.line([x + 17, y + 19, x + 17, y + 11], fill=INK, width=2)
+    d.line([x + 17, y + 19, x + 23, y + 23], fill=INK, width=2)
 
 
 def illo_jobs(d, x, y, w, h):
@@ -330,7 +330,7 @@ def illo_jobs(d, x, y, w, h):
         d.rectangle([bx, y + h - 8 - bh, bx + 20, y + h - 8], fill=(178, 34, 52))
     d.line([x + 8, y + h - 8, x + w - 8, y + h - 8], fill=INK, width=2)
     f = font(SANSB, 16)
-    d.text((x + w - 62, y + 4), "4.9%", font=f, fill=RED)
+    d.text((x + 8, y + 4), "4.9%", font=f, fill=RED)
 
 
 def illo_cyclone(d, x, y, w, h):
@@ -511,12 +511,24 @@ def draw_mediums(d):
 
 
 CONTINENTS = [
-    [(28, 28), (108, 22), (128, 58), (98, 96), (52, 88), (28, 58)],
-    [(108, 104), (140, 98), (154, 138), (128, 176), (112, 140)],
-    [(168, 28), (198, 22), (208, 52), (184, 60), (168, 48)],
-    [(174, 68), (214, 62), (230, 108), (204, 150), (184, 118)],
-    [(214, 24), (298, 18), (330, 58), (298, 100), (240, 90), (220, 54)],
-    [(288, 138), (324, 132), (330, 158), (294, 164)],
+    [(26, 30), (44, 20), (72, 14), (104, 16), (126, 28), (120, 44), (112, 52),
+     (104, 62), (96, 74), (88, 68), (76, 80), (58, 90), (40, 84), (28, 66), (22, 48)],
+    [(88, 108), (128, 96), (146, 104), (154, 124), (146, 150), (130, 178),
+     (116, 152), (98, 128)],
+    [(166, 30), (184, 20), (202, 24), (210, 38), (202, 52), (188, 60),
+     (172, 50), (162, 38)],
+    [(172, 68), (196, 58), (216, 66), (230, 88), (232, 108), (222, 130),
+     (206, 152), (190, 134), (180, 108), (170, 86)],
+    [(212, 26), (244, 16), (282, 16), (312, 26), (330, 48), (324, 72),
+     (306, 92), (292, 102), (268, 94), (250, 98), (234, 80), (220, 56), (208, 38)],
+    [(286, 138), (306, 130), (326, 138), (330, 156), (312, 166), (292, 160), (282, 148)],
+]
+ISLANDS = [
+    [(158, 26), (164, 24), (166, 34), (162, 42), (156, 36)],
+    [(332, 56), (338, 54), (340, 68), (334, 70)],
+    [(262, 104), (266, 102), (270, 106), (266, 108)],
+    [(274, 108), (278, 106), (282, 110), (278, 112)],
+    [(332, 148), (336, 146), (338, 158), (334, 160)],
 ]
 
 PINS = {1: (286, 44), 2: (188, 40), 3: (120, 130), 4: (70, 60), 5: (252, 56),
@@ -530,6 +542,9 @@ def draw_map(d):
     x0, y0, w, h = M, 802, 344, 182
     d.rectangle([x0, y0, x0 + w, y0 + h], fill=SEA, outline=INK, width=1)
     for poly in CONTINENTS:
+        pts = [(x0 + px, y0 + py) for px, py in poly]
+        d.polygon(pts, fill=LAND, outline=(150, 130, 90))
+    for poly in ISLANDS:
         pts = [(x0 + px, y0 + py) for px, py in poly]
         d.polygon(pts, fill=LAND, outline=(150, 130, 90))
     f_pin = font(SANSB, 9)
