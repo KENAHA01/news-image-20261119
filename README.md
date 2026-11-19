@@ -6,18 +6,33 @@ Entry for the [make.fun bounty news-image-20261119](https://make.fun/bounty/news
 a program that draws one newspaper front-page image summing up Thursday
 19 November 2026 world news to `/output/entry.png`.
 
-The front page carries 40 verified stories in a 4-by-10 grid of compact
-cards, no illustrations: each card has a colour bar for its region, a
-Bebas headline on one line and a Work Sans summary on one line. Regions:
-Europe 8, Middle East 8, Asia 10, Africa 4, Americas 5, Oceania 2,
-World 3. The day's biggest stories are the first three-way summit of
-Trump, Xi and Putin in Shenzhen, Iran widening its attacks on Kuwait
-and Bahrain, and the world court ruling Myanmar committed genocide
-against the Rohingya. A DATE CHECK strip names the near-miss stories
+## v2 (current)
+
+The front page follows the formula the live leaderboard's top 5 entries
+share: a big serif masthead with the date, a red kicker naming the
+three biggest stories, a region bar, a strip of six big numbers, three
+large illustrated lead cards, ten medium illustrated cards, a world map
+with numbered pins, and a numbered list of the remaining stories.
+39 verified stories. Regions: Asia 10, Middle East 5, Europe 8,
+Africa 2, Americas 7, Oceania 3, World 4. The leads are the first
+three-way summit of Trump, Xi and Putin in Shenzhen, the world court
+ruling Myanmar committed genocide against the Rohingya (9-6), and GTA VI
+going on sale after a 13-year wait. Every picture on the page is drawn
+with Pillow code in `make_image.py` (flat cartoon style, no outside
+images, no AI pictures). A DATE CHECK strip names the near-miss stories
 left out because they belong to 17 or 18 November. Every story was
-checked against its source page for the 19 November date; claims are
-shown as claims (Trump on Iran, the Badme clash reports). See
-`sources.json` for one source and note per story.
+checked against its source for the 19 November date; claims are shown
+as claims (Trump on Iran, the Gaza raid). See `sources.json` for one
+source and note per story.
+
+Changes from v1 (40 compact text-only cards): the five big stories v1
+missed are now in - GTA VI, Anthropic's first trading day, COP31's last
+48 hours, the Suneung exam, Australia's 4.9% jobless rate. Dropped
+after re-checking dates: Iran's attacks on Kuwait and Bahrain and the
+Hormuz tanker hit (both 18 Nov), the Pew Muslims-by-2035 projection
+(first reported 18 Nov), plus Sindhu, Guyana, Badme, Senegal and the
+UAE growth forecast. Anthropic's $83 pricing was Wednesday 18 Nov;
+Thursday 19 Nov is the first trading day (opened at $111.50).
 
 ## Run it
 
